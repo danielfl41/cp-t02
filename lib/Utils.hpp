@@ -7,6 +7,11 @@
 class Utils
 {
 public:
+    /**
+* Convierte un string a un vector en base a un delimitador
+* @param &s referencia al string a e ditar.
+* @param delimiter delimitador para hacer el split
+*/
     static vector<string> split(const string &s, char delimiter)
     {
         vector<string> tokens;
@@ -18,6 +23,10 @@ public:
         }
         return tokens;
     }
+    /**
+* Remueve las doble comillas iniciales y finales de una palabra
+* @param word Palabra a la cual se le removerán las doble comillas
+*/
     static string removeCommas(string word)
     {
         if (word[0] == '"')
