@@ -1,1 +1,2 @@
-build/*
+no-openMP/build/*
+openMP/build/*
